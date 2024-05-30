@@ -1,15 +1,9 @@
-n = int(input())
-dic = {}
-for _ in range(n):
-    fruit, num = input().split()
-    num = int(num)
+count = int(input())
+fruit = {'STRAWBERRY':0,'BANANA':0,'LIME':0,'PLUM':0}
+count2 = 0
 
-    if fruit in dic.keys():
-        dic[fruit] += num
-    else:
-        dic[fruit] = num
+for i in range(count):
+    fruit_name, quantity = input().split()
+    fruit[fruit_name] += int(quantity)
 
-if any(count == 5 for count in dic.values()):
-    print("YES")
-else:
-    print("NO")
+print('YES') if 5 in fruit.values() else print('NO')
