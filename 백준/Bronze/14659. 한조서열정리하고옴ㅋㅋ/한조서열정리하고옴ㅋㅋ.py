@@ -1,19 +1,16 @@
-how_many = int(input())
-height_list = list(map(int,input().split()))
-max_height, kill_count, length, break_count = 0, 0, 0, 0
+n = int(input())
+hights = list(map(int, input().split()))
 
-for height in height_list:
-    length += 1
-    if max_height == 0:
-        max_height = height
-    elif max_height > height:
-        kill_count += 1
-    elif max_height < height:
-        if kill_count >= (len(height_list) - length):
-            break_count = kill_count
+cnt = 0
+maxNum = hights[0]
+for i in range(n):
+    if maxNum > hights[i]:
+        cnt += 1
+    elif maxNum < hights[i]:
+        if cnt >= n-i:
             break
         else:
-            kill_count = 0
-            max_height = height
+            maxNum = hights[i]
+            cnt = 0
 
-print(kill_count if break_count == 0 else break_count)
+print(cnt)
