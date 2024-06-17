@@ -1,7 +1,18 @@
-first, second = map(int, input().split())
-num_list = [1]
+# i * i 번 배열 만들고 범위의 합 구하기
 
-for i in range(2,second):
+range1, range2 = map(int, input().split())
+
+num_list = [0]
+sum_num, count = 0, 0
+
+for i in range(1,range2+1):
     for j in range(i):
         num_list.append(i)
-print(sum(num_list[first-1:second]))
+        count += 1
+    if count > range2:
+        break
+
+for i in range(range1, range2+1):
+    sum_num += num_list[i]
+
+print(sum_num)
