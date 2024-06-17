@@ -1,9 +1,13 @@
-count = int(input())
-fruit = {'STRAWBERRY':0,'BANANA':0,'LIME':0,'PLUM':0}
-count2 = 0
+import sys
+input = sys.stdin.readline
 
-for i in range(count):
-    fruit_name, quantity = input().split()
-    fruit[fruit_name] += int(quantity)
+d = {}
+for _ in range(int(input())):
+    s, x = input().split()
+    d[s] = d.get(s, 0) + int(x)
 
-print('YES') if 5 in fruit.values() else print('NO')
+for n in d:
+    if d[n] == 5:
+        print('YES')
+        exit()
+print('NO')

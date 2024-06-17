@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 31120 KB, 시간: 3932 ms
+메모리: 31120 KB, 시간: 112 ms
 
 ### 분류
 
@@ -12,11 +12,11 @@
 
 ### 제출 일자
 
-2024년 5월 30일 11:10:37
+2024년 6월 17일 09:37:04
 
 ### 문제 설명
 
-<p style="text-align: center;"><img alt="" src="" style="width: 320px;"></p>
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/d306bac4-bfc2-4dd3-a4be-9f832cdefd6c/-/preview/" style="width: 320px;"></p>
 
 <p style="text-align: center;">그림 B.1: 할리갈리</p>
 
